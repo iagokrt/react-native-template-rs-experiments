@@ -11,10 +11,11 @@ interface Task {
 }
 
 export function Home() {
-  // const [tasks, setTasks] = useState<Task[]>([]);
+  const [tasks, setTasks] = useState<Task[]>([]);
 
   function handleAddTask(newTaskTitle: string) {
     //TODO - add new task if it's not empty
+    console.log(newTaskTitle);
   }
 
   function handleMarkTaskAsDone(id: number) {
